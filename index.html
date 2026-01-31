@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPRIMAX UP - Solutions Technologiques Innovantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR FUTURISTE -->
+    <nav class="navbar light-on">
+        <a href="#" class="logo">
+            <img src="assets/images/Logo.png" alt="">
+        </a>
+
+        <!-- Navigation Desktop (visible sur desktop) -->
+        <div class="nav-links">
+            <a href="#slider">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Réalisations</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Bouton Menu Burger (visible uniquement sur mobile) -->
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Menu Mobile (caché sur desktop, visible sur mobile) -->
+        <div class="mobile-nav">
+            <button class="close-mobile-menu">
+                
+                    <i class="fas fa-times"></i>
+                
+            </button>
+            <a href="#slider">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Réalisations</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- SLIDER AUTOMATIQUE -->
+    <div class="slider-container" id="slider">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide slide-1 active">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="slide-text-block">
+                        <h1 class="slide-title">Solutions Technologiques Innovantes pour l'Entreprise de Demain</h1>
+                        <p class="slide-description">OPRIMAX UP combine expertise technique et vision créative pour
+                            transformer vos idées en solutions digitales performantes. Nous créons l'avenir, une
+                            technologie à la fois.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i> Voir nos réalisations
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-comment"></i> Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="slide-text-block">
+                        <h1 class="slide-title">Intelligence Artificielle & Automatisation Avancée</h1>
+                        <p class="slide-description">Leveragez la puissance de l'IA pour optimiser vos processus
+                            métiers, automatiser les tâches répétitives et prendre des décisions éclairées basées sur
+                            les données.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#services" class="btn btn-primary">
+                                <i class="fas fa-robot"></i> Découvrir nos services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="slide-text-block">
+                        <h1 class="slide-title">Transformation Digitale Sur Mesure</h1>
+                        <p class="slide-description">Accélérez votre transformation digitale avec des solutions adaptées
+                            à vos besoins spécifiques. De la conception au déploiement, nous vous accompagnons à chaque
+                            étape.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-handshake"></i> Devenir partenaire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="slider-nav">
+            <button class="prev-slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Indicateurs -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </div>
+
+    <!-- SECTION À PROPOS -->
+    <section id="about" class="about">
+        <h2 class="section-title">À Propos </h2>
+        <div class="about-content">
+            <div class="about-card">
+                <h3><i class="fas fa-eye"></i> Notre Vision</h3>
+                <p>Être le partenaire technologique privilégié des entreprises innovantes en Afrique et au-delà, en
+                    créant des solutions digitales qui transforment les défis en opportunités.</p>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fa-bullseye"></i> Notre Mission</h3>
+                <p>Fournir des solutions technologiques sur mesure qui optimisent les processus, améliorent l'expérience
+                    utilisateur et génèrent une valeur tangible pour nos clients.</p>
+            </div>
+            <div class="about-card">
+                <h3><i class="fas fa-gem"></i> Nos Valeurs</h3>
+                <p>Innovation, Excellence, Collaboration et Impact. Nous croyons en la puissance de la technologie pour
+                    créer un avenir meilleur et plus connecté.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CO-FONDATEUR -->
+    <section id="cofondateur" class="cofondateur">
+        <div class="cofondateur-container">
+            <div class="cofondateur-image">
+                <img src="assets/images/dg3.jpeg" alt="Co-fondateur OPRIMAX UP">
+                <div class="cofondateur-badge">
+                    <i class="fas fa-crown"></i> Co-founder
+                </div>
+            </div>
+            <div class="cofondateur-content">
+
+                <div class="cofondateur-title">Lancine Dosso</div>
+                <div class="cofondateur-description">
+                    <p>Visionnaire et entrepreneur passionné par la technologie, Lancine Dosso a fondé OPRIMAX UP avec
+                        la conviction que l'innovation technologique peut transformer les entreprises africaines et leur
+                        permettre de rivaliser sur la scène internationale.</p>
+
+                    <p>Après avoir participer à la conception et réalisation de plusieurs projets dans le
+                        développement web et la transformation digitale, il dirige l'équipe
+                        technique avec une approche centrée sur l'excellence et l'innovation.</p>
+
+
+
+
+
+                    <div class="cofondateur-stats">
+
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Projets réalisés</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Technologies maîtrisées</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="services">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Développement Web</h3>
+                <p>Solutions web sur mesure, responsives et performantes utilisant les technologies les plus récentes.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Développement Mobile</h3>
+                <p>Applications iOS et Android natives et cross-platform pour atteindre vos utilisateurs partout.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Intelligence Artificielle</h3>
+                <p>Solutions d'IA et de machine learning pour automatiser et optimiser vos processus métiers.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Automatisation de Tâches</h3>
+                <p>Systèmes d'automatisation pour éliminer les tâches répétitives et améliorer l'efficacité.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3>Solutions Digitales</h3>
+                <p>Solutions technologiques intégrées adaptées aux besoins spécifiques de votre entreprise.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Médias & Création Digitale</h3>
+                <p>Contenu visuel, design graphique et solutions médias pour renforcer votre présence digitale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Nos Réalisations</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-project="1">
+                <div class="project-badge completed">
+                    <i class="fas fa-check-circle"></i> Terminé
+                </div>
+                <img src="assets/images/pharmacie.png" alt="Projet E-commerce" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Plateforme de gestion de pharmacie et recommandation de garde</h3>
+                    <p>Solution complète de gestion de geolocalisation de pharmacie</p>
+                    <div class="portfolio-buttons">
+                        <a href="index.html" class="btn-visit">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="1">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-project="2">
+                <div class="project-badge completed">
+                    <i class="fas fa-check-circle"></i> Terminé
+                </div>
+                <img src="assets/images/planb.png" alt="Dashboard Analytique" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Metiers des professionnels</h3>
+                    <p>Plateforme de mise en relation de professionnels dans plusieurs secteurs d'activité</p>
+                    <div class="portfolio-buttons">
+                        <a href="#" class="btn-visit" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="2">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="3">
+                <div class="project-badge in-progress">
+                    <i class="fas fa-sync-alt"></i> En cours
+                </div>
+                <img src="assets/images/appliv.png" alt="Application Mobile" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Application de Livraison</h3>
+                    <p>Application mobile pour service de livraison en temps réel</p>
+                    <div class="portfolio-buttons">
+                        <a href="#" class="btn-visit">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="3">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="5">
+                <div class="project-badge in-progress">
+                    <i class="fas fa-sync-alt"></i> En cours
+                </div>
+                <img src="assets/images/aprofici.png" alt="Dashboard Analytique" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Plateforme Aprofi-ci</h3>
+                    <p>La plateforme de vente et location de biens immobiliers</p>
+                    <div class="portfolio-buttons">
+                        <a href="https://aprofi-ci.vercel.app/explore.html" class="btn-visit" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="5">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="4">
+                <div class="project-badge completed">
+                    <i class="fas fa-check-circle"></i> Terminé
+                </div>
+                <img src="assets/images/resto.png" alt="Dashboard Analytique" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Application de Gestion de Restaurant</h3>
+                    <p>RestoSmart, une solution logicielle de gestion de restaurant</p>
+                    <div class="portfolio-buttons">
+                        <a href="index.html" class="btn-visit">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="4">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="6">
+                <div class="project-badge in-progress">
+                    <i class="fas fa-sync-alt"></i> En cours
+                </div>
+                <img src="assets/images/hotel.png" alt="Dashboard Analytique" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h3>Application de Gestion de Restaurant</h3>
+                    <p>HotelPro, une solution logicielle de gestion d'hôtel</p>
+                    <div class="portfolio-buttons">
+                        <a href="#" class="btn-visit" target="">
+                            <i class="fas fa-external-link-alt"></i> Visiter
+                        </a>
+                        <button class="btn-details" data-project="6">
+                            <i class="fas fa-info-circle"></i> Détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SECTION PARTENAIRES -->
+    <!-- SECTION PARTENAIRES -->
+    <section id="partners" class="partners">
+        <h2 class="section-title">Nos Partenaires</h2>
+        <div class="partners-container">
+            <div class="partners-track">
+                <!-- Logos avec placeholders directement dans HTML -->
+                <div class="partner-logo">
+                    <img src="assets/images/l4.png" alt="SmartDev">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l5.png" alt="CyberSecure">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l6.png" alt="InnovateAfrica">
+                </div>
+
+                <div class="partner-logo">
+                    <img src="assets/images/l1.png" alt="MobileFirst">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l2.png" alt="PlanB-Ivoire">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l3.png" alt="FutureTech">
+                </div>>
+            </div>
+            <div class="partners-track partners-track-2">
+                <div class="partner-logo">
+                    <img src="assets/images/l1.png" alt="MobileFirst">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l2.png" alt="PlanB-Ivoire">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l3.png" alt="FutureTech">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l4.png" alt="SmartDev">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l5.png" alt="CyberSecure">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l6.png" alt="InnovateAfrica">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/l7.png" alt="DigitalPartners">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ÉQUIPE -->
+    <section id="team" class="team">
+        <h2 class="section-title">Notre Équipe</h2>
+        <div class="team-grid">
+
+
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/dg2.jpeg" alt="Alexandre K.">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3>Lancine Dosso.</h3>
+                <div class="team-role"> Développeur Full Stack & IA</div>
+                <p>Expert en développement full stack et solutions d'intelligence artificielle. Plus de 8 ans
+                    d'expérience.</p>
+                <div class="team-skills">
+                    <span>JavaScript</span>
+                    <span>Laravel</span>
+                    <span>React</span>
+                    <span>IA/N8N</span>
+                    <span>Wordpress</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/equipe2.jfif" alt="Clara D.">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <h3>Mirelle Sako</h3>
+                <div class="team-role">Web Designer</div>
+                <p>Création d'interfaces utilisateur esthétiques et fonctionnelles. Expertise en design graphique et
+                    branding.</p>
+                <div class="team-skills">
+                    <span>Figma</span>
+                    <span>Adobe XD</span>
+                    <span>Photoshop</span>
+                    <span>Illustrator</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/equipe1.jfif" alt="Sophie M.">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <h3>Axel Mambe</h3>
+                <div class="team-role">Développeur Frontend</div>
+                <p>Spécialiste en interfaces utilisateur modernes et expériences interactives. Passionnée par le design
+                    UX/UI.</p>
+                <div class="team-skills">
+                    <span>React</span>
+                    <span>Vue.js</span>
+                    <span>CSS/SASS</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Demander un Devis</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>lancinedosso850@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+                    <p>+225 01 03 53 36 85</p>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-clock"></i> Heures de travail</h3>
+                    <p>Lundi - Vendredi: 8h00 - 18h00</p>
+                    <p>Samedi: 9h00 - 13h00</p>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Localisation</h3>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                    <p>Yopougon, Cosmos</p>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service souhaité *</label>
+                    <select id="service" name="service" class="form-control" required>
+                        <option value="">Sélectionnez un service</option>
+                        <option value="web">Développement Web</option>
+                        <option value="mobile">Développement Mobile</option>
+                        <option value="ai">Intelligence Artificielle</option>
+                        <option value="automation">Automatisation</option>
+                        <option value="digital">Solutions Digitales</option>
+                        <option value="media">Médias & Création Digitale</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Détails du projet *</label>
+                    <textarea id="message" name="message" class="form-control" required
+                        placeholder="Décrivez votre projet, vos besoins, votre budget et vos délais..."></textarea>
+                </div>
+
+                <div class="submit-buttons">
+                    <button type="button" id="whatsappSubmit" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Envoyer sur WhatsApp
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Envoyer par Email
+                    </button>
+                </div>
+
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- WHATSAPP CHATBOT -->
+    <a href="https://wa.me/2250103533685?text=Bonjour%20OPRIMAX%20UP,%20je%20souhaiterais%20discuter%20d'un%20projet"
+        class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- NOTIFICATIONS INTELLIGENTES -->
+    <div class="notification-container">
+        <!-- Les notifications seront ajoutées dynamiquement par JavaScript -->
+    </div>
+
+    <!-- MODAL PORTFOLIO -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Projet Détails</h3>
+                <button class="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Projet" class="modal-img">
+                <div id="modalDescription">
+                    <p>Description du projet...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">OPRIMAX UP</div>
+        <p class="footer-text">Solutions technologiques innovantes pour transformer votre entreprise. Contactez-nous
+            pour discuter de votre prochain projet.</p>
+
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Demander un devis
+            </a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Réalisations</a>
+            <a href="#team">Équipe</a>
+            <a href="#contact">Contact</a>
+            <a href="#" id="privacyPolicy">Politique de confidentialité</a>
+            <a href="#" id="termsConditions">Conditions d'utilisation</a>
+        </div>
+
+        <p class="copyright">© 2025 OPRIMAX UP. Tous droits réservés. Conçu avec <i class="fas fa-heart"
+                style="color: #ff5e00;"></i> en Côte d'Ivoire.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
